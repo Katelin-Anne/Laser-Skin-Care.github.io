@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Promo Reminder -->
+  <div class="promo">
+    <p>🎉 Get 20% off treatments this month! Book now!</p>
+  </div>
+
+  <!-- Banner and Navigation Bar -->
+  <header >
+    <nav>
+      <div class="logo"> 
+        <div class="background"></div>
+        <span class="arch">Laser Skin Care</span>
+    </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+       <li><a href="index.html#treatments">Treatments</a></li>
+        <li><a href="index.html#about">About</a></li> 
+        <li><a href="index.html#contact">Contact</a></li>       
+      </ul>
+    </nav>
+    
+  </header>
+
+  <!-- Booking Form -->
+  <section class="booking-section">
+    <h2>Make a Booking</h2>
+    <form id="booking-form">
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="first-name" required>
+
+      <label for="surname">Surname:</label>
+      <input type="text" id="surname" name="surname" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="date">Preferred Date:</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Preferred Time:</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="treatment">Select a Treatment:</label>
+      <select id="treatment" name="treatment" required>
+        <option value="laser-hair-removal">Laser Hair Removal</option>
+        <option value="skin-rejuvenation">Skin Rejuvenation</option>
+        <option value="acne-treatment">Acne Treatment</option>
+        <option value="wrinkle-reduction">Wrinkle Reduction</option>
+      </select>
+
+      <p class="note">*Please note that a non-refundable booking fee of R250 is required to secure your booking, which is deducted from your treatment fee.</p>
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+ <!-- Footer -->
+ <footer>
+    <div class="footer-container">
+       <!--div class="footer-logo">Laser Skin Care</div-->
+      <div class="subscribe">
+        <h3>Subscribe</h3>
+        <input type="email" placeholder="Your email" />
+        <button>Subscribe</button>
+      </div>
+      <p>Terms & Conditions apply. &copy; 2024 Laser Skin Care</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

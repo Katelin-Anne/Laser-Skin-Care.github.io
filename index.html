@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Laser Skin Care</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Simsun&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Promo Reminder -->
+  <div class="promo">
+    <p>🎉 Get 20% off treatments this month! Book now!</p>
+  </div>
+
+  <!-- Navigation -->
+  <header class="banner">
+    
+    <nav>
+      <div class="logo">
+        <div class="background"></div>
+        <span class="arch">Laser Skin Care</span>
+    </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#treatments">Treatments</a></li>
+        <li><a href="index.html #about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      
+    </nav>
+    <div class="banner-content"> 
+            
+      <h1>Glow with Confidence</h1>
+      <p>Professional laser treatments for radiant skin.</p>
+      <a href="booking.html" class="btn">Book Now</a>
+    
+   
+    </div>
+  </header>
+
+  <section id="treatments">
+   <h2 class="products-heading">Our Treatments</h2>
+    <div class="treatment-grid">
+      <div class="treatment-card">
+        <img src="img/hair removal.jpg" alt="Laser Hair Removal">
+        <h3>Laser Hair Removal</h3>
+        <p>Safe and effective hair removal for smooth skin.</p>
+        <a href="laser-hair.html" class="btn btn-primary">Learn More</a>
+      </div>
+      <div class="treatment-card">
+        <img src="img/skin brightning.jpg" alt="Skin Rejuvenation">
+        <h3>Skin Rejuvenation</h3>
+        <p>Brighten and renew your skin.</p>
+        <a href="skin-rejuvenation.html" class="btn btn-primary">Learn More</a>
+      </div>
+      <div class="treatment-card">
+        <img src="img/skincare.jpg" alt="Acne Treatment">
+        <h3>Acne Treatment</h3>
+        <p>Reduce acne and improve skin texture.</p>
+        <a href="Acne Treatmeant.html" class="btn btn-primary">Learn More</a>
+      </div>
+      <div class="treatment-card">
+        <img src="img/non-surgical.jpg" alt="Wrinkle Reduction">
+        <h3>Wrinkle Reduction</h3>
+        <p>Smooth fine lines and wrinkles.</p>
+        <a href="Wrinkle Reduction.html" class="btn btn-primary">Learn More</a>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="about-section">
+    <div class="about-container">
+      <!-- Image Slider -->
+      <div class="about-slider">
+        <img src="img/about1.jpg" alt="About Slide 1">
+        
+      </div>
+      <!-- Notes Section -->
+      <div class="about-notes">
+        <h2 >About Us</h2>
+        <p>At Laser Skin Studio, we specialize in innovative skin treatments to help you look and feel your best. With state-of-the-art technology and expert professionals, we ensure a personalized and safe experience for every client.</p>
+        <p>We’re committed to glowing results and enhancing your confidence. Experience the difference with us!</p>
+        
+      </div>
+    </div>
+  </section>
+  
+  <section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to book an appointment? Reach out to us!</p>
+    <div class="contact-details">
+      <p><strong>Email:</strong> info@laserskinstudio.com</p>
+      <p><strong>Phone:</strong> +123-456-7890</p>
+      <p><strong>Address:</strong> 123 Skin Glow Street, Radiant City</p>
+    </div>
+    <form class="contact-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+  <!--section id="about" class="slideshow">
+    <div class="slide">
+      <img src="img/about.jpg" alt="About Us">
+      <h2>About Us</h2>
+      <p>Learn about our mission and team.</p>
+      <a href="#about-page" class="btn">More Details</a>
+    </div>
+    <div class="slide">
+      <img src="contact-us.jpg" alt="Contact Us">
+      <h2>Contact Us</h2>
+      <p>Have questions? Get in touch with us.</p>
+      <a href="#contact-page" class="btn">Contact Now</a>
+    </div>
+  </section-->
+
+  <!-- Treatments Section --
+  <section id="treatments">
+    <h2>Our Treatments</h2>
+    <div class="treatment-grid">
+      <div class="treatment-card">
+        <h3>Laser Hair Removal</h3>
+        <p>Safe and effective hair removal for smooth skin.</p>
+        <button onclick="showDetails('hair')">Learn More</button>
+      </div>
+      <div class="treatment-card">
+        <h3>Skin Rejuvenation</h3>
+        <p>Brighten and renew your skin.</p>
+        <button onclick="showDetails('rejuvenation')">Learn More</button>
+      </div>
+      <div class="treatment-card">
+        <h3>Acne Treatment</h3>
+        <p>Reduce acne and improve skin texture.</p>
+        <button onclick="showDetails('acne')">Learn More</button>
+      </div>
+      <div class="treatment-card">
+        <h3>Wrinkle Reduction</h3>
+        <p>Smooth fine lines and wrinkles.</p>
+        <button onclick="showDetails('wrinkles')">Learn More</button>
+      </div>
+    </div>
+    <a href="pricing.pdf" target="_blank" class="btn">View Pricing</a>
+  </section>
+
+  <-- Slideshow Banner --
+  <section id="about">
+    <div class="slideshow">
+      <div class="slide">
+        <h2>About Us</h2>
+        <p>Learn about our mission and team.</p>
+        <a href="#about-page" class="btn">More Details</a>
+      </div>
+      <div class="slide">
+        <h2>Contact Us</h2>
+        <p>Have questions? Get in touch with us.</p>
+        <a href="#contact-page" class="btn">Contact Now</a>
+      </div>
+    </div>
+  </section>-->
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <!--div class="footer-logo">Laser Skin Care</div-->
+      <div class="subscribe">
+        <h3>Subscribe</h3>
+        <input type="email" placeholder="Your email" />
+        <button>Subscribe</button>
+      </div>
+      <p>Terms & Conditions apply. &copy; 2024 Laser Skin Care</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

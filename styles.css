@@ -1,0 +1,398 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #4a235a;
+}
+
+.promo {
+  background: #bb8fce;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.logo {
+            font-family: 'Simsun', serif;
+            font-size: 48px; /* Adjust size as needed */
+            color: #800080; /* Purple color */
+            text-align: center;
+            position: relative;
+            overflow: hidden; /* Prevent overflow */
+        }
+        .arch {
+            display: inline-block;
+            transform: skewY(50%); /* Adjust skew to create a horizontal arch effect */
+            position: relative;
+            z-index: 1; /* Ensure text is above the background */
+        }
+        .background {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 120%; /* Adjust width as needed */
+            height: 100%;
+            background-color: #EE82EE; /* Violet color */
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scaleY(0.5); /* Adjust scale for arch */
+            z-index: 0; /* Place behind text */
+        }
+/*
+.logo-container {
+  display: flex; /* Use flexbox for alignment 
+  justify-content: center; /* Center the logo horizontally 
+  align-items: center; /* Center the logo vertically 
+}
+
+.logo {
+  max-width: 100%; /* Make the logo responsive 
+  height: auto; /* Maintain aspect ratio 
+  width: 200px; /* Set a specific width for the logo */
+  /* You can adjust the width as needed 
+}*/
+
+header.banner {
+  background: url('img/banner.jpg') no-repeat center/cover;
+  color:#4a235a;
+  text-align: center;
+  padding: 50px 20px;
+}
+.banner {
+  background-size: cover;
+  background-position: center;
+  height: 80vh; /* Adjust height as needed */
+  /*display: flex;
+  align-items: center;*/
+
+  color: #4a235a; /* Adjust text color for visibility */
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+
+nav ul li a, .btn {
+  color: white;
+  text-decoration: none;
+  padding: 8px 15px;
+  background: #4a235a;
+  border-radius: 5px;
+  
+}
+
+.products-heading {
+  text-align: center; /* Center the text */
+  margin: 20px 0; /* Add some margin above and below the heading */
+  font-size: 2em; /* Adjust font size as needed */
+  color: #4a235a; /* Change color if needed */
+}
+.treatment-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.treatment-card {
+  width: 22%;
+  text-align: center;
+  background: #e8daef;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.treatment-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+/*  .banner {
+    background: url('banner.jpg') no-repeat center/cover;
+    position: relative;
+    color: white;
+  }*/
+  
+  .slideshow .slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+
+  .banner-content {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-end;  /*Align items to the right */
+    padding: 100px;
+    color: #4a235a;
+    text-align: right; /* Align text to the right */
+}
+  /* .banner-content {
+    display: flex;
+    align-items: center;
+   justify-content: space-between;
+    padding: 20px;
+    color: #4a235a;
+  }*/
+  /*
+  .text-content {
+    max-width: 50%;
+  }
+  
+  .banner-image img {
+    position: relative;
+    max-width: 100%;
+    max-height: auto;
+    border-radius: 8px;
+  }*/
+  
+
+  .about-section {
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .about-slider {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .about-slider img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .about-notes {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    background: #f8f1f9;
+    border-radius: 8px;
+    text-justify: center;
+  }
+
+  .contact-section {
+    padding: 40px;
+    background: #f8f1f9;
+    text-align: center;
+  }
+  
+  .contact-details {
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .contact-form input, .contact-form textarea, .contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .contact-form button {
+    background: #4a235a;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+
+  /* Booking Section */
+.booking-section {
+    padding: 40px;
+    background: #f8f1f9;
+    text-align: center;
+  }
+  
+  .booking-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .booking-section label {
+    display: block;
+    margin: 10px 0 5px;
+  }
+  
+  .booking-section input,
+  .booking-section select,
+  .booking-section button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .booking-section button {
+    background: #4a235a;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .note {
+    font-size: 0.9rem;
+    color: #7d3c98;
+    margin: 10px 0;
+  }
+
+  /* Laser Hair Removal Section */
+.laser-hair-removal {
+    padding: 40px;
+    background: #f8f1f9;
+  }
+  
+  .laser-hair-removal h1 {
+    text-align: center;
+    color: #4a235a;
+  }
+  
+  .laser-hair-removal .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .laser-hair-removal article {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .laser-hair-removal h2 {
+    color: #4a235a;
+  }
+
+  /* Skin Rejuvenation Section */
+.skin-rejuvenation {
+    padding: 40px;
+    background: #f8f1f9;
+  }
+  
+  .skin-rejuvenation h1 {
+    text-align: center;
+    color: #4a235a;
+  }
+  
+  .skin-rejuvenation .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .skin-rejuvenation article {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skin-rejuvenation h2 {
+    color: #4a235a;
+  }
+  
+  /* Acne Treatment Section */
+.acne-treatment {
+  padding: 40px;
+  background: #f8f1f9;
+}
+
+.acne-treatment h1 {
+  text-align: center;
+  color: #4a235a;
+}
+
+.acne-treatment .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.acne-treatment article {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.acne-treatment h2 {
+  color: #4a235a;
+}
+
+ /* Wrinkle Reduction Section */
+ .wrinkle-reduction {
+  padding: 40px;
+  background: #f8f1f9;
+}
+
+.wrinkle-reduction h1 {
+  text-align: center;
+  color: #4a235a;
+}
+
+.wrinkle-reduction .content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.wrinkle-reduction article {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.wrinkle-reduction h2 {
+  color: #4a235a;
+}
+
+footer {
+  background: #4a235a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  
+}
